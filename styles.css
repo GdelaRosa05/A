@@ -97,3 +97,9 @@ button, input {
     color: var(--font-color);
     transition: 0.2s;
 }
+
+@media (max-width: 768px) {
+    .login-container{
+        max-width: 90%;
+    }
+}
