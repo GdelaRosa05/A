@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --body-color: #131313;
+    --container-color: #212025;
+    --detail-color1: #313035;
+    --detail-color2: #37363b;
+    --font-color: #ffff;
+    --font-color2: #acacac;
+}
+
+* {
+  pointer-events: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: var(--body-color);
+    color: var(--font-color);
+    height: 100vh;
+    min-height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+button, input {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: var(--font-color);
+    border: none;
+    outline: none;
+}
+
+.login-container {
+    background-color: var(--container-color);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .teclado {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 20px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.login-container .pin-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-container .pin-container input {
+    background-color: var(--detail-color1);
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    pointer-events: none;
+    font-weight: 600;
+}
+
+
+.login-container .teclado button {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: var(--detail-color1);
+    color: var(--font-color2);
+    transition: 0.2s;
+    cursor: pointer;
+    pointer-events: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.login-container .teclado button:hover{
+    background-color: var(--detail-color2);
+    color: var(--font-color);
+    transition: 0.2s;
+}
