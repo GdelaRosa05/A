@@ -42,11 +42,12 @@ button, input {
     background-color: var(--container-color);
     padding: 40px;
     border-radius: 20px;
-    max-width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    width: fit-content;
 }
 
 .login-container .teclado {
@@ -63,6 +64,7 @@ button, input {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .login-container .pin-container input {
@@ -100,6 +102,6 @@ button, input {
 
 @media (max-width: 768px) {
     .login-container{
-        max-width: 90%;
+        width: 80% !important;
     }
 }
